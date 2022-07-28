@@ -6,13 +6,19 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+let original = [];
+
 const tail = function(input) {
-  let output = input[0];
-  return output;
+  original = input;
+  return input.slice(1);
 };
 
 // TEST CODE
 assertEqual(tail([5,6,7]), 5);
+console.log(original);
 assertEqual(tail(["Hello", "Lighthouse", "Labs"]), "Hello");
+console.log(original);
 assertEqual(tail(["Hello"]), "Hello");
+console.log(original);
 assertEqual(tail([]), "Hello");
+console.log(original);
