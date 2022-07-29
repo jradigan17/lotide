@@ -13,11 +13,9 @@ const countOnly = function(allItems, itemsToCount) {
 
   for (let i in itemsToCount) {
     let count = 0;
-    if (itemsToCount[i]) {
-      for (let j in allItems) {
-        if (i === allItems[j]) {
-          count += 1;
-        }
+    for (let j in allItems) {
+      if (itemsToCount[i] && i === allItems[j]) {
+        count += 1;
       }
     }
     if (count > 0) {
