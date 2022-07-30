@@ -15,9 +15,9 @@ const assertArraysEqual = function(array1, array2, expected) {
   }
 
   if (actual === expected) {
-    console.log(`🐢 Assertion Passed: ${actual} === ${expected} 🐢`);
+    console.log("\x1b[32m%s\x1b[0m", `🐢 Assertion Passed: ${array1} === ${array2} 🐢`);
   } else {
-    console.log(`🛑 Assertion Failed: ${actual} !== ${expected} 🛑`);
+    console.log("\x1b[31m%s\x1b[0m", `🛑 Assertion Failed: ${array1} !== ${array2} 🛑`);
   }
 };
 
@@ -35,7 +35,9 @@ const without = function(words, remove) {
 
 // TEST CODE
 const words = ["hello", "world", "lighthouse"];
+
 //console.log(without(words, ["lighthouse"])); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
 assertArraysEqual(without(words, ["lighthouse"]), ["hello", "world"], true);
 assertArraysEqual(words, ["hello", "world", "lighthouse"], true);
+console.log(words);
