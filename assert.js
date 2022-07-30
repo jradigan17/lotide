@@ -12,3 +12,20 @@ for (let number = 2; number <= 5; number += 1) {
 // the # is 4
 // the # is 5
 // Assertion failed: {number: 5, errorMsg: "the # is not even"}
+
+// FUNCTION IMPLEMENTATION
+const sum = function(a, b) {
+  return a + b;
+};
+
+// TEST CODE
+console.assert(sum(1, 2) === 3);
+console.assert(sum(1, 20) === 3); // bad / incorrect assertion, and we see it fail!
+
+// FUNCTION IMPLEMENTATION
+const sumBuggy = function(a, b) {
+  return a * b;
+};
+
+// TEST CODE
+console.assert(sumBuggy(1, 2) === 3); // fails, because bug!

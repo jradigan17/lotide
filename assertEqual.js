@@ -1,16 +1,15 @@
-// FUNCTION IMPLEMENTATION
-const sum = function(a, b) {
-  return a + b;
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log("\x1b[32m%s\x1b[0m", `🐢 Assertion Passed: ${actual} === ${expected} 🐢`);
+  } else {
+    console.log("\x1b[31m%s\x1b[0m", `🛑 Assertion Failed: ${actual} !== ${expected} 🛑`);
+  }
 };
 
 // TEST CODE
-console.assert(sum(1, 2) === 3);
-console.assert(sum(1, 20) === 3); // bad / incorrect assertion, and we see it fail!
-
-// FUNCTION IMPLEMENTATION
-const sumBuggy = function(a, b) {
-  return a * b;
-};
-
-// TEST CODE
-console.assert(sumBuggy(1, 2) === 3); // fails, because bug!
+assertEqual("Lighthouse Labs", "Bootcamp");
+assertEqual(1, 1);
+assertEqual("1", 1);
+assertEqual(true, false);
+assertEqual(012, 12.0);
+assertEqual(15, 15.0);
