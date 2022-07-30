@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (actual === expected) {
     console.log("\x1b[32m%s\x1b[0m", `🐢 Assertion Passed: ${actual} === ${expected} 🐢`);
   } else {
@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function(string) {
+const letterPositions = function(string) {
   let result = {};
 
   for (let i of string) {
@@ -23,5 +23,5 @@ const countLetters = function(string) {
 };
 
 // TEST CODE
-assertEqual(countLetters("lighthouse in the house")["h"], 4);
-assertEqual(countLetters("jennelle")["e"], 3);
+assertArraysEqual(letterPositions("lighthouse in the house")["h"], 4);
+assertArraysEqual(letterPositions("jennelle")["e"], 3);
