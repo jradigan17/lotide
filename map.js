@@ -9,7 +9,7 @@ const map = function(array, callback) {
   return results;
 };
 
-assertEqual(eqArrays(map(words, word => word[0]), ["g", "c", "t", "m", "t"]), true);
+// assertEqual(eqArrays(map(words, word => word[0]), ["g", "c", "t", "m", "t"]), true);
 
 /* Alternate map function
 

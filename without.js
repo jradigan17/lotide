@@ -19,11 +19,11 @@ const without = function(input, remove) {
 };
 
 // TEST CODE
-const words = ["hello", "world", "lighthouse"];
+// const words = ["hello", "world", "lighthouse"];
 
-//console.log(without(words, ["lighthouse"])); // no need to capture return value for this test case
-// Make sure the original array was not altered by the without function
-assertEqual(eqArrays(without(words, ["lighthouse", "world"]), ["hello"]), true);
-assertEqual(eqArrays(words, ["hello", "world", "lighthouse"]), true);
+// //console.log(without(words, ["lighthouse"])); // no need to capture return value for this test case
+// // Make sure the original array was not altered by the without function
+// assertEqual(eqArrays(without(words, ["lighthouse", "world"]), ["hello"]), true);
+// assertEqual(eqArrays(words, ["hello", "world", "lighthouse"]), true);
 
 module.exports = without;

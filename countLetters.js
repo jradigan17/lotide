@@ -17,7 +17,7 @@ const countLetters = function(string) {
 };
 
 // TEST CODE
-assertEqual(countLetters("lighthouse in the house")["h"], 4);
-assertEqual(countLetters("jennelle")["e"], 3);
+// assertEqual(countLetters("lighthouse in the house")["h"], 4);
+// assertEqual(countLetters("jennelle")["e"], 3);
 
 module.exports = countLetters;

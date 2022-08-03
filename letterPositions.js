@@ -20,7 +20,7 @@ const letterPositions = function(sentence) {
 
 
 // TEST CODE
-assertEqual(eqArrays(letterPositions("lighthouse in the house")["h"], [3, 5, 15, 18]), true);
-assertEqual(eqArrays(letterPositions("jennelle")["e"], [1, 4, 7]), true);
+// assertEqual(eqArrays(letterPositions("lighthouse in the house")["h"], [3, 5, 15, 18]), true);
+// assertEqual(eqArrays(letterPositions("jennelle")["e"], [1, 4, 7]), true);
 
 module.exports = letterPositions;
