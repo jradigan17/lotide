@@ -15,3 +15,5 @@ const flatten = function(arrays) {
 
 console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
 console.log(flatten(["two", 8, [13, 9, 20, "three"], "Hello", ["world", 6]])); // => [1, 2, 3, 4, 5, 6]
+
+module.exports = flatten;

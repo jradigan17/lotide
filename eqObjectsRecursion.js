@@ -1,10 +1,5 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log("\x1b[32m%s\x1b[0m", `🐢 Assertion Passed: ${actual} === ${expected} 🐢`);
-  } else {
-    console.log("\x1b[31m%s\x1b[0m", `🛑 Assertion Failed: ${actual} !== ${expected} 🛑`);
-  }
-};
+const assertEqual = require('./assertEqual');
+const eqArrays = require('./eqArraysRecursion');
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
@@ -30,24 +25,6 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-const eqArrays = function(array1, array2) {
-  if (!array1 || !array2 || array1.length !== array2.length) {
-    return false;
-  }
-  for (let item in array1) {
-    if (Array.isArray(array1[item])) {
-      if (!eqArrays(array1[item], array2[item])) {
-        return false;
-      }
-      continue;
-    } else if (array1[item] === array2[item]) {
-      continue;
-    } else if (array1[item] !== array2[item]) {
-      return false;
-    }
-  }
-  return true;
-};
 
 // TEST CODE
 const ab = { a: "1", b: "2" };
@@ -67,3 +44,5 @@ assertEqual(eqObjects(cd, cd2), false); // => false
 assertEqual(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), true); // => true
 assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), false); // => false
 assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }), false); // => false
+
+module.exports = eqObjects;

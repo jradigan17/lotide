@@ -31,3 +31,5 @@ assertArraysEqual(["1", "2", "3"], ["1", "2", 3], true); // => false
 
 assertArraysEqual(["1", "2", "3"], ["1", "2"], true); // => false
 assertArraysEqual("", ["1", "2", 3], true); // => false
+
+module.exports = assertArraysEqual;
