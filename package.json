@@ -1,0 +1,23 @@
+{
+  "name": "@jradigan/lotide",
+  "version": "1.0.0",
+  "description": "LHL Lotide project using JavaScript. Minimal take on the JS Lodash library",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jradigan17/lotide.git"
+  },
+  "keywords": [],
+  "author": "jradigan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jradigan17/lotide/issues"
+  },
+  "homepage": "https://github.com/jradigan17/lotide#readme"
+}
