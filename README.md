@@ -13,18 +13,17 @@ The LHL Lotide project is inspired by the [Lodash](https://lodash.com) project l
 This project was created and published by me as part of my learnings at Lighthouse Labs. 
 
 ---------------------------------------------------
+## Getting Started
 
-## Usage
-
-**Install it:**
+**_Install it:_**
 
 `npm install @jradigan/lotide`
 
-**Require it:**
+**_Require it:_**
 
 `const _ = require('@jradigan/lotide');`
 
-**Call it:**
+**_Call it:_**
 
 `const results = _.tail([1, 2, 3]) // => [2, 3]`
 
@@ -49,5 +48,4 @@ This project was created and published by me as part of my learnings at Lighthou
 - [x] `tail(input)`: outputs all items of an array minus the first item in the input array
 - [x] `takeUntil(array, callback)`: outputs all items of an array until it comes to the callback item in which it stops
 - [x] `without(input, remove)`: outputs the input array without the remove item while keeping the initial array in tact 
-
 
