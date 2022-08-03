@@ -1,6 +1,6 @@
 const assertEqual = require('./assertEqual');
 
-const letterPositions = function(string) {
+const countLetters = function(string) {
   let result = {};
 
   for (let i of string) {
@@ -17,7 +17,7 @@ const letterPositions = function(string) {
 };
 
 // TEST CODE
-assertEqual(letterPositions("lighthouse in the house")["h"], 4);
-assertEqual(letterPositions("jennelle")["e"], 3);
+assertEqual(countLetters("lighthouse in the house")["h"], 4);
+assertEqual(countLetters("jennelle")["e"], 3);
 
-module.exports = letterPositions;
+module.exports = countLetters;

@@ -3,6 +3,9 @@ const eqArrays = require('./eqArraysRecursion');
 
 const middle = function(list) {
   let output = [];
+  if (!list || list.length === 0) {
+    return "Whoops Missing Input Parameters"
+  }
   if (list.length % 2 === 0) {
     let index = [list.length / 2 - 1, list.length / 2];
     output.push(list[index[0]]) + output.push(list[index[1]]);
@@ -15,9 +18,9 @@ const middle = function(list) {
 };
 
 // TEST CODE
-assertEqual(eqArrays(middle([1, 2, 3]), [2]), true); // => true
-assertEqual(eqArrays(middle([1, 2, 3, 4]), [2, 3]), true); // => true
-assertEqual(eqArrays(middle([1, 2, 3, 4, 5, 6]), [3, 4]), true); // => true
-assertEqual(eqArrays(middle([2, 3]), [2, 3]), true); // => true
+// assertEqual(eqArrays(middle([1, 2, 3]), [2]), true); // => true
+// assertEqual(eqArrays(middle([1, 2, 3, 4]), [2, 3]), true); // => true
+// assertEqual(eqArrays(middle([1, 2, 3, 4, 5, 6]), [3, 4]), true); // => true
+// assertEqual(eqArrays(middle([2, 3]), [2, 3]), true); // => true
 
 module.exports = middle;
