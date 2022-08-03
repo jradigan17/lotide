@@ -1,6 +1,6 @@
 {
   "name": "@jradigan/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "LHL Lotide project using JavaScript. Minimal take on the JS Lodash library",
   "main": "index.js",
   "directories": {
