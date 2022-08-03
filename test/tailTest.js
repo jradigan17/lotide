@@ -21,8 +21,8 @@ describe("#tail", () => {
     assert.deepEqual(tail(['5']), []); 
   });
 
-  it("returns [6, 7] for [5,6,7]", () => {
-    assert.deepEqual(tail([5,6,7]), [6, 7]);
+  it("returns [6, 7] for [5, 6, 7]", () => {
+    assert.deepEqual(tail([5, 6, 7]), [6, 7]);
   });
 
   it("returns ['Lighthouse', 'Labs'] for ['Hello', 'Lighthouse', 'Labs']", () => {

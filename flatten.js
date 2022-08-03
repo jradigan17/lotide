@@ -1,5 +1,8 @@
 const flatten = function(arrays) {
   let output = [];
+  if (!arrays || arrays.length === 0) {
+    return "Whoops Missing Input Parameters"
+  }
   for (let i = 0; i < arrays.length; i++) {
     if (Array.isArray(arrays[i])) {
       for (let j = 0; j < arrays[i].length; j++) {

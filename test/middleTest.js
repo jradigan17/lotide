@@ -8,7 +8,7 @@ const middle = require('../middle');
 // assertEqual(eqArrays(middle([2, 3]), [2, 3]), true); // => true
 
 
-describe("#tail", () => {
+describe("#middle", () => {
 
   it("returns [2] for [1, 2, 3]", () => {
     assert.deepEqual(middle([1, 2, 3]), [2]);
@@ -26,7 +26,7 @@ describe("#tail", () => {
     assert.deepEqual(middle([2, 3]), [2, 3]);
   });
 
-  it("returns [3, 4] for [[1, 2, 3, 4, 5, 6]", () => {
+  it("returns [3, 4] for [1, 2, 3, 4, 5, 6]", () => {
     assert.deepEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
   });
 
